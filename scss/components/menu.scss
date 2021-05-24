@@ -1,0 +1,51 @@
+.menu {
+    width: 100%;
+    height: calc(100vh - 96px);
+    max-height: 100%;
+    background-color: #282434;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+
+    &__info {
+        width: 100%;
+        font-size: 1.4rem;
+        color: #fff;
+        padding: .5rem 0;
+        text-align: center;
+
+
+        &::after {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, .2);
+            display: block;
+            margin: 5px auto;
+        }
+
+        &-brand {
+            padding: .2rem 1rem 0.4rem 1rem;
+            background-color: #fff;
+            color: #282434;
+            border-radius: 5rem;
+        }
+
+    }
+
+    &__menu-item {
+        max-width: 100%;
+        font-size: 1.2rem;
+        color: #fff;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+
+    &__item-name {
+        margin-left: 2rem;
+    }
+}
